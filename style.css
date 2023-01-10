@@ -34,8 +34,12 @@ header {
     margin: auto;
     padding: 10px;
 }
-.menu a {
+
+a {
     text-decoration: none;
+}
+
+.menu a {
     color: white;
     text-transform: uppercase;
 }
@@ -135,7 +139,13 @@ button:hover {
 input,  select{
     height: 30px;
 }
+form p {
+    text-align: center;
+}
 
+#policy {
+    color: gray;
+}
 
 
 @media (max-width: 768px) {
