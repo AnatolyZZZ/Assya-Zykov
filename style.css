@@ -149,8 +149,12 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-input,  select, option{
+input,  option {
     height: 30px;
+}
+select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
 }
 form p {
     text-align: center;
