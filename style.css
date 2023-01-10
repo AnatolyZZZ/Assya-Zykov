@@ -1,6 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: rgb(29, 170, 142);
     height: 40px;
+    margin: 0;
 }
 
 #burger-menu {
@@ -33,11 +39,59 @@ header {
     color: rgb(235, 122, 9);
 }
 
+h1 {
+    text-align: center;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+section img {
+    height: 300px;
+    width: 300px;
+}
+
+.textinfo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textinfo>hr {
+    color: black;
+    width: 50px;
+}
+.main-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-block div{
+    width: 300px;
+    height: 130px;
+    margin: 5px;
+}
+.main-block h2 {
+    display: inline;
+    margin-left: 10px;
+}
+
 @media (max-width: 768px) {
     .menu {
         display: none;
     }   
     #burger-menu { 
     display: inline;
+    }
+}
+
+@media (max-width: 480px) {
+    section img {
+        height: 200px;
+        width: 200px;
+    }
+    .textinfo {
+        width: 200px;
     }
 }
