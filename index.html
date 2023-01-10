@@ -12,11 +12,16 @@
 </head>
 <body>
     <header>
-        <span class="material-symbols-outlined" id="burger-menu">
+        <!-- <span class="material-symbols-outlined" id="burger-menu">
             menu
-        </span>            
+        </span>             -->
+        <span id="burger-menu2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
         <ul class="menu">
-            <a href="#">Professionals</a>
+            <a href="#professionals">Professionals</a>
             <a href="#">Buisnessmen</a>
             <a href="#">Everybody</a>
             <a href="#">About me</a>
@@ -31,7 +36,7 @@
         </div>
         <img src="site_main_square.jpg" alt="main-pic">
     </section>
-    <h1>Professionals</h1>
+    <h1 id="professionals">Professionals</h1>
     <section class="main-block">
         <div>
             <span class="material-symbols-outlined">rocket_launch</span>
@@ -48,6 +53,7 @@
             <h2>Career path</h2>
             <p>"I know alot, but how my proffession is called?" </p>
         </div>
+       
         <div>
             <span class="material-symbols-outlined">rocket_launch</span>
             <h2>Career boost</h2>
@@ -82,7 +88,8 @@
         <div class="plate" id="four-meetings">
             <h1>Four meetings</h1>
             <p class="minimal">4 sessions 90 minutes each</p>
-            <p class="price">&#x20AA 1000</p>
+            <p class="price" id="wrong-price">&#x20AA 1200</p>
+            <p class="price" id="correct-price">&#x20AA 1000</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ducimus nostrum deserunt, aliquam quas cumque optio esse magni quidem beatae.</p>
         </div>
     </section>
@@ -90,10 +97,10 @@
     <section>
         <form action="#" id="contact-form">
             <input type="text" placeholder="Name">
-            <input type="email" placeholder="email">
+            <input type="phone" placeholder="Phone">
             <select name="action" id="action">
                 <option value="call">Call me</option>
-                <option value="mail">Email me</option>
+                <option value="mail">Whatsapp me</option>
             </select>
             <button class="green-button" type="submit">Send</button>
             <p class="minimal">By subbmiting this you agree to our <a href="#" id="policy"> policy</a>

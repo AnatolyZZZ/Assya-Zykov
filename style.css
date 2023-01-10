@@ -1,4 +1,4 @@
-body {
+body , html {
     margin: 0;
     padding: 0;
 }
@@ -25,6 +25,18 @@ header {
     'GRAD' 0,
     'opsz' 48
     
+}
+#burger-menu2 {
+    display: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#burger-menu2 div {
+    background-color: white;
+    width: 35px;
+    height: 3px;
+    margin: 6px 0;
 }
 .menu {
     list-style: none;
@@ -111,6 +123,7 @@ button:hover {
     background-color: antiquewhite;
     text-align: center;
     margin-bottom: 20px;
+    padding: 25px;
 }
 .plate:hover {
     transform: scale(1.1);
@@ -136,11 +149,22 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-input,  select{
+input,  select, option{
     height: 30px;
 }
 form p {
     text-align: center;
+}
+
+#wrong-price {
+    text-decoration-line: line-through;
+    color: gray;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+#correct-price {
+    margin-top: 0px;
 }
 
 #policy {
@@ -152,8 +176,8 @@ form p {
     .menu {
         display: none;
     }   
-    #burger-menu { 
-    display: inline;
+    #burger-menu , #burger-menu2 { 
+    display: inline-block;
     }
 }
 
@@ -164,5 +188,11 @@ form p {
     }
     .textinfo {
         width: 200px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .main-block > div {
+        margin-right: 100px;
     }
 }
