@@ -6,14 +6,19 @@ body {
 header {
     background-color: rgb(29, 170, 142);
     height: 40px;
-    margin: 0;
+    /* margin: 0; */
 }
 
 #burger-menu {
+    /* this is because margin top doesnt work for this span */
     display: none;
+    position: relative;
+    top: 7px;
     cursor: pointer;
     color: white;
-    margin: 10px;
+    margin: 20px;
+    transform: scale(2);
+    font-size: 2em;
     font-variation-settings:
     'FILL' 1,
     'wght' 700,
@@ -45,6 +50,7 @@ h1 {
 section {
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 section img {
@@ -86,22 +92,51 @@ button {
 button:hover {
     cursor: pointer;
 }
-#first-button {
+.green-button {
     color: white;
     background-color: rgb(29, 170, 142);
 }
+.black-button {
+    color: white;
+    background-color: black;
+}
+
 .plate {
     width: 300px;
-    height: 400px;
+    height: 450px;
     background-color: antiquewhite;
     text-align: center;
+    margin-bottom: 20px;
+}
+.plate:hover {
+    transform: scale(1.1);
+}
+.minimal {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.price {
+    font-size: 3em;
+}
+#first-consult .price {
+    color: rgb(235, 122, 9);
+}
+
+.about-service {
+    padding: 20px;
 }
 
 #services {
-    margin-top: 20px;
+    margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+input,  select{
+    height: 30px;
+}
+
+
 
 @media (max-width: 768px) {
     .menu {

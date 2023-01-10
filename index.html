@@ -64,23 +64,40 @@
             <p>"I know alot, but how my proffession is called?" </p>
         </div>
     </section>
-    <section><button id="first-button" href="#">Appoint meeting</button></section>
+    <section><a href="#contact-form"><button class="green-button">Appoint meeting</button></a></section>
     <section id="services">
         <div class="plate" id="first-consult">
             <h1>First appointment</h1>
-            <p class="price">&#x20AA 200</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, numquam! Magnam dolorem dolores voluptate tenetur laborum provident, illum eius tempore?</p>
+            <p class="minimal">60 minutes</p>
+            <p class="price">&#x20AA 150</p>
+            <p class="about-service">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, numquam! Magnam dolorem dolores voluptate tenetur laborum provident, illum eius tempore?</p>
+            <a href="#contact-form"><button class="black-button"> Appoint meeting</button></a>
         </div>
         <div class="plate" id="single-meeting">
             <h1>One time meeting</h1>
+            <p class="minimal">90 minutes</p>
             <p class="price">&#x20AA 300</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, cum doloremque! Dicta minus incidunt maiores totam hic amet ab quidem.</p>
+            <p class="about-service">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, cum doloremque! Dicta minus incidunt maiores totam hic amet ab quidem.</p>
         </div>
         <div class="plate" id="four-meetings">
             <h1>Four meetings</h1>
+            <p class="minimal">4 sessions 90 minutes each</p>
             <p class="price">&#x20AA 1000</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ducimus nostrum deserunt, aliquam quas cumque optio esse magni quidem beatae.</p>
         </div>
+    </section>
+    <h1>Lets arrange first meeting!</h1>
+    <section>
+        <form action="#" id="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="email">
+            <select name="action" id="action">
+                <option value="call">Call me</option>
+                <option value="mail">Email me</option>
+            </select>
+            <button class="green-button" type="submit">Send</button>
+        </form>
+
     </section>
 </body>
 </html>
