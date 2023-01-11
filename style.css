@@ -216,8 +216,14 @@ footer p {
     }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1283px) {
     .main-block > div {
         margin: 5px 50px;
+    }
+}
+
+@media (min-width: 1654px) {
+    .main-block > div {
+        margin: 5px 100px;
     }
 }
