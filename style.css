@@ -1,6 +1,7 @@
 body , html {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -65,7 +66,7 @@ h1 {
 }
 section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 10px;
 }
 
@@ -88,6 +89,8 @@ section img {
 .main-block {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
 }
 .main-block div{
     width: 300px;
@@ -101,8 +104,8 @@ section img {
 
 button {
     margin: auto;
-    width: 200px;
-    height: 30px;
+    width: 190px;
+    height: 35px;
     border: none;
 }
 button:hover {
@@ -151,11 +154,13 @@ button:hover {
 }
 input,  option {
     height: 30px;
+    margin-bottom: 15px;
 }
 select {
     -webkit-appearance: menulist-button;
     height: 35px;
 }
+
 form p {
     text-align: center;
 }
@@ -174,6 +179,18 @@ form p {
 #policy {
     color: gray;
 }
+footer {
+    background-color: rgb(29, 170, 142);
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+footer p {
+    margin-left: 50px;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -182,6 +199,10 @@ form p {
     }   
     #burger-menu , #burger-menu2 { 
     display: inline-block;
+    }
+    form {
+        padding: 0 30px;
+        text-align: center;
     }
 }
 
