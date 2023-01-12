@@ -57,7 +57,7 @@ a {
     text-transform: uppercase;
 }
 
-.menu a:hover {
+.menu a:hover:first-child {
     color: rgb(235, 122, 9);
 }
 
